@@ -27,7 +27,7 @@ express.use(body_Parser.json({ type: "application/json" })); // for parsing appl
 express.use(body_Parser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 
 const con = mysql.createConnection({
-  host: "localhost",
+  host: "127.0.0.1",
   port: 3306,
   user: "root",
   password: "root",
